@@ -21,7 +21,7 @@ def is_equal(bitmap, start, size, flipx=False, flipy=False):
     return True
 
 def thread_function(thread_index, thread_count):
-    with Image.open("/home/yon/Pictures/babi.png") as img:
+    with Image.open("babi.png") as img:
         bitmap = img.load()
         y = height*thread_index
         while True:
@@ -46,4 +46,4 @@ with Manager() as manager:
     for th in threads:
         th.join()
 
-print("UwU aww my thweads awe done ଘ(੭ ˘ ᵕ˘)━☆ﾟ.*･｡ﾟᵕ꒳ᵕ~")
+print("UwU aww my thweads awe done ଘ(੭ ˘ ᵕ˘)━☆ﾟ.*･｡ﾟᵕ꒳ᵕ~") # will not happen
