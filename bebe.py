@@ -1,6 +1,6 @@
 from PIL import Image
 
-with Image.open("/Users/jakob/Desktop/baby_filter.png") as im:
+with Image.open("babi.png") as im:
   data = im.load()
 
   out = 0
